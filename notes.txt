@@ -30,6 +30,8 @@ Further Improvements:
 - Currently all builds are for development locally. Consideration for production would need to be added.
 
 - Improve overall test coverage.
+- Add e2e testing via Cypress.
+
 - Improved validation and messaging for duplicate short links (the hash and the original Url)
 - Improve testing of `frontend` for Accessiblity with `jest-axe`
 

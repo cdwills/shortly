@@ -1,6 +1,6 @@
 # Shortly
 
-Elixir Phoenix & React powered URL Shortener
+Phoenix & React powered URL Shortener
 
 ## Setup via Docker
 ```sh
@@ -13,7 +13,6 @@ open http://localhost:8080
 ## Project Info
 ### Frontend
 - Created with `create-react-app`
-- Using TailwindCSS
 - `makefile` included for `setup`, `test`, and `server`
 - Local dev server `http://localhost:3000`
 
@@ -26,3 +25,4 @@ open http://localhost:8080
 ### Web
 - Created with `NGINX`
 - Proxies requests from both frontend and backend
+- Located at `http://localhost:8080`
