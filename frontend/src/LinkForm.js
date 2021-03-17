@@ -14,6 +14,7 @@ export default function LinkForm(){
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (isDisabled) return;
     const postData = {
       link: { url }
     }
