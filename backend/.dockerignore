@@ -1,0 +1,7 @@
+.git
+Dockerfile
+Dockerfile.prod
+_build
+deps
+*.ez
+erl_crash.dump

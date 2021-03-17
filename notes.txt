@@ -1,0 +1,35 @@
+Thank you for taking the time to review my submission.
+
+- Seperate frontend and backend applications stitched together via
+  `docker-compose` and an `NGINX` proxy.
+
+- The application Url structure is as follows:
+  http://localhost:8080/ -> React application SPA
+  http://localhost:8080/{hash} -> Phoenix endpoint for redirect
+  http://localhost:8080/api/links -> REST JSON endpoints via Phoenix
+
+- `Frontend` application created with `create-react-app`
+- `Backend` application created with Elixir Phoenix
+- Datastore is `PostgreSQL`
+
+- Each project directory has a `makefile` to facilitate local development and testing
+  utilizing the template provided with the instructions.
+
+- The `frontend` application consumes the `BACKEND_URL` ENV variable for local development
+  and assumes relative in "production".
+
+- The `backend` application serves no HTML and only has one non-JSON endpoint for redirects.
+  This choice was made to avoid having to load JavaScript for a redirect.
+
+- Validation happens on in the `/api/links` POST endpoint for Url. It is also implemented
+  in the form in the `frontend` app.  This is to prevent any bad actors hitting our API directly.
+
+Further Improvements:
+
+- Improved validation and messaging for duplicate short links (the hash and the original Url)
+- Improve testing of `frontend` for Accessiblity with `jest-axe`
+
+- Improve integration testing with something like `Wallaby` on the backend for the Phoenix app.
+- Improve doc tests in Phoenix application.
+
+- If looking for an alternative to React SPA for this small app I would investigate using Phoenix LiveView.
