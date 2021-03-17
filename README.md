@@ -5,6 +5,7 @@ Phoenix & React powered URL Shortener
 ## Setup via Docker
 ```sh
 git clone github@github.com:cdwills/shortly.git
+cd shortly
 docker-compose build
 docker-compose up
 open http://localhost:8080
