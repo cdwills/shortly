@@ -28,7 +28,7 @@ services:
   backend:
     build: backend
     volumes:
-      - './backend:/app'
+      - './backend:/app/code'
     ports:
       - 4001:4000
     environment:

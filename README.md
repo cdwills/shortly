@@ -4,8 +4,8 @@ Elixir Phoenix & React powered URL Shortener
 
 ## Setup via Docker
 ```sh
-git clone github@github.com/cdwills/shortly
-docker-compose build --parallel
+git clone github@github.com:cdwills/shortly.git
+docker-compose build
 docker-compose up
 open http://localhost:8080
 ```
